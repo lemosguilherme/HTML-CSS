@@ -7,7 +7,15 @@
     <style>
         table {
             border-collapse: collapse;
-            width: 15px;
+            width: 1100px;
+        }
+        caption {
+            font-size: 2em;
+            font-weight: bolder;
+            background-color: rgba(128, 128, 128, 0.589);
+            padding: 5px;
+            border: 1px solid black;
+            margin-bottom: 10px;
         }
         td, th {
             text-align: center;
@@ -17,20 +25,27 @@
         td.num {
             text-align: right;
         }
+        th {
+            background-color: rgba(128, 128, 128, 0.322);
+        }
+        tr:nth-child(2n){
+            background-color: rgba(128, 128, 128, 0.322);
+        }
     </style>
 </head>
 <body>
     <h1>Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Unidade federativa</th>	
-                <th>População(Censo de 2022)</th>
-                <th>População(Censo de 2010)</th>
-                <th>Mudança</th>
-                <th>% da pop. total</th>
-                <th>País comparável(habitantes)</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade federativa</th>	
+                <th scope="col">População(Censo de 2022)</th>
+                <th scope="col">População(Censo de 2010)</th>
+                <th scope="col">Mudança</th>
+                <th scope="col">% da pop. total</th>
+                <th scope="col">País comparável(habitantes)</th>
             </tr>
         </thead>
         <tbody>
@@ -303,10 +318,13 @@
         </tbody>
         <tfoot>
             <tr>
-                <td >Total</td>
-                <td >Brasil</td>
-                <td>203 062 512</td>
-                <td>203 062 512</td>
+                <th scope="row">Total</th>
+                <td>Brasil</td>
+                <td class="num"><strong>203 062 512</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </tfoot>
     </table>
