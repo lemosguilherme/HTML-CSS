@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 300px;
+    background-color: yellow;
+}
+div.bloco1 {
+    position: absolute;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+main {
+    position: relative;
+    border: 1px solid black;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}

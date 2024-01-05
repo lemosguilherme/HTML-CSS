@@ -28,6 +28,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     z-index: 100;
+    
 }
 header h2 {
     font-weight: 800;
@@ -37,6 +38,7 @@ header h2 {
     color: #359381;
     pointer-events: none;
     margin-right: 400px;
+    
 }
 .navegacao a {
     text-decoration: none;
@@ -46,6 +48,7 @@ header h2 {
     margin: 0px 10px;
     font-weight: 600;
     font-size: 1.4em;
+    transition: 0.5s;
 }
 .navegacao a:hover, .navegacao a.ativado {
     background-color: #359381;
@@ -65,16 +68,19 @@ header h2 {
     left: 0;
     width: 100%;
     pointer-events: none;
+    transition: 1s;
 }
 #texto {
     position: absolute;
     color: white;
     font-size: 6.5em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452); 
+    transition: 1s;
 }
 .secundario {
     position: relative;
     background-color: #003329;
     padding: 100px;
     color: white;
+    transition: 1s;
 }
