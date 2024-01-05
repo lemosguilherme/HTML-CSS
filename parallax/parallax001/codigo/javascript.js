@@ -14,4 +14,3 @@ window.addEventListener("scroll", function() {
     foto4.style.marginLeft= value * -2 + "px"
     foto5.style.marginLeft = value * 1.5 + "px"
 })
-
