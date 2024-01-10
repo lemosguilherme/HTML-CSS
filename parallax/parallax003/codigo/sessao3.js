@@ -13,4 +13,3 @@ document.addEventListener("scroll", function(){
         img2.style.transform = "translateX(0px)";
     }
 })
-
